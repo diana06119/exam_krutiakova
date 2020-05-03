@@ -49,3 +49,29 @@ int main()
 			cout << endl;
 		}
 	}
+	else if (option == 2)
+	{
+
+		for (int i = 0; i < height; i++)
+		{
+			for (int j = 0; j < height; j++)
+			{
+				if (i + j >= height - 1)
+					cout << "#";
+				else
+					cout << " ";
+			}
+			cout << " ";
+			for (int j = 0; j < height; j++)
+			{
+				if (i >= j)
+					cout << "#";
+				else
+					cout << " ";
+			}
+			cout << endl;
+		}
+	}
+
+	return 0;
+}
