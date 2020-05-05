@@ -46,3 +46,14 @@ bool CorrectCard(const char* NumberCard)
 
 	return 0 == Sum % 10;
 }
+void ShowCardNumber(const char NumberCard[], const int SIZE_CARD)
+{
+	cout << "Your card number\n";
+	for (size_t i = 0; i < SIZE_CARD; i++)
+	{
+		cout << NumberCard[i];
+
+		if (i == 3 || i == 7 || i == 11)
+			cout << " ";
+	}
+}
